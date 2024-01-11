@@ -3,7 +3,7 @@ import Form from 'react-bootstrap/Form'
 import FilmsGallery from './FilmsGallery'
 import { IoGridSharp } from "react-icons/io5";
 import { BsFillGrid3X3GapFill } from "react-icons/bs";
-import { Nav } from 'react-bootstrap';
+
 
 export default class Main extends Component {
   render() {
@@ -12,7 +12,7 @@ export default class Main extends Component {
         <div>
             <h1 className='fs-2 d-inline'>Movies</h1>
             <Form.Select className='rounded-0 genre d-inline mx-3' >
-            <option>Genres</option>
+            <option >Genres</option>
             <option value="1">Comedy</option>
             <option value="2">Drama</option>
             <option value="3">Thriller</option>

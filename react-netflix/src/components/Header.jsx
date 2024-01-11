@@ -9,8 +9,8 @@ import { FaUser } from "react-icons/fa"
 
 function Header() {
   return (
-    <Navbar expand="lg"   data-bs-theme="dark">
-      <Container className='mx-2'>
+    <Navbar expand="lg"   data-bs-theme="dark" className='justify-content-between'>
+      <Container fluid>
         <Navbar.Brand href="#home"> 
         <img
               alt="logo"
@@ -20,17 +20,17 @@ function Header() {
               className="d-inline-block align-top"
             /> {/* caricare immagine correttamente */}
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav" >
-          <Nav className='d-flex justify-content-between'>
-            <div className='d-flex'>
+        <Navbar.Toggle />
+        <Navbar.Collapse id="basic-navbar-nav"  >
+          <Nav className='d-flex justify-content-between w-100'>
+            <div className='d-flex justify-content-around'>
               <Nav.Link href="#home">Home</Nav.Link>
               <Nav.Link href="#TVShows">TV Shows</Nav.Link>
               <Nav.Link href="#movies">Movies</Nav.Link>
               <Nav.Link href="#recAdded">Recently Added</Nav.Link>
               <Nav.Link href="#myList">My List</Nav.Link>
             </div>
-            <div className='d-flex '>
+            <div className='d-flex justify-content-around'>
               <Nav.Link  href="#search"><IoIosSearch /></Nav.Link>
               <Nav.Link  href="#kids">KIDS</Nav.Link>
               <Nav.Link href="#notification"><FaBell /></Nav.Link>
