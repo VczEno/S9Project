@@ -4,7 +4,7 @@ import {Row, Col, Nav, Button } from "react-bootstrap"
 export default function Footer() {
     let footerLinks = ['Audio and Subtitles', 'Audio Description', 'Help Center', 'Gift Card', 'Media Center', 'Investor Relations', 'Jobs', 'Terms of Use', 'Privacy', 'Legal Notices', 'Cookie Preferencies', 'Corporate Information', 'Contact Us' ]
   return (
-   <Container className="w-50">
+   <Container className="w-50 text-center">
     <Row className='my-3 row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg 4'>
         {footerLinks.map((l,index) =>   <Col key={index} className="my-1" >
                                     <Nav.Link className="fs-6 footer-links">
