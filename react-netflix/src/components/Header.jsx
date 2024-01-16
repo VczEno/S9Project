@@ -6,6 +6,7 @@ import logo from '../assets/logo.png'
 import { IoIosSearch } from "react-icons/io";
 import { FaBell } from "react-icons/fa6";
 import { FaUser } from "react-icons/fa"
+import { Link } from 'react-router-dom';
 
 function Header() {
   return (
@@ -25,7 +26,7 @@ function Header() {
           <Nav className='d-flex justify-content-between w-100'>
             <div className='d-flex justify-content-around'>
               <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#TVShows">TV Shows</Nav.Link>
+              <Link className='nav-link' to='/TvShows'>TV Shows</Link>
               <Nav.Link href="#movies">Movies</Nav.Link>
               <Nav.Link href="#recAdded">Recently Added</Nav.Link>
               <Nav.Link href="#myList">My List</Nav.Link>

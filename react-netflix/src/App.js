@@ -1,15 +1,25 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css';
 import Header from "./components/Header"
-import Main from "./components/Main"
+
 import Footer from "./components/Footer"
+import { BrowserRouter, Route, Routes, } from 'react-router-dom';
+import { TvShows } from './pages/TvShows';
+import { PageNotFound } from './pages/PageNotFound';
+import { MovieDetails } from './pages/MovieDetails';
+
 function App() {
   return (
-    <div>
-    <Header />
-    <Main />
-    <Footer /> 
-    </div>
+      <BrowserRouter>
+      <Header />
+        <Routes>
+          <Route path='/TvShows' element={<TvShows/>}/>
+          <Route path='/movieDetail/:id' element={<MovieDetails/>}/>
+          <Route path='*' element={<PageNotFound/>}/>
+          
+        </Routes>
+        <Footer />
+      </BrowserRouter>
   );
 }
 
